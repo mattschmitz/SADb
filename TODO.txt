@@ -1,0 +1,1 @@
+* Add Rufo (like prettier), and format accordingly
