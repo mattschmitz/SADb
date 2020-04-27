@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.summary = "A simple relational database written in Ruby"
   spec.homepage = "https://github.com/mattschmitz/SADb"
   spec.license = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
@@ -29,4 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "pry", "~> 0.10"
   spec.add_development_dependency "rufo", "~> 0.12"
+  spec.add_development_dependency "rubocop", "~> 0.82.0"
+  spec.add_development_dependency "rubocop-config-rufo", "~> 0.1.0"
 end
