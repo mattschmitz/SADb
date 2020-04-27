@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'minitest/autorun'
-require 'csv'
+require "minitest/autorun"
+require "csv"
 
 # Expects sample data to live in sample_data directory
 # Let's refactor this later!

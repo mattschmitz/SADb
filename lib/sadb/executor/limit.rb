@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'minitest/autorun'
+require "minitest/autorun"
 
 module Sadb
   module Executor
-    class Limit 
+    class Limit
       def initialize(params:, next_node:)
         @limit = params[:limit]
         @current_row_count = 0

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Include all executor files
-resources = File.join(File.dirname(__FILE__), 'executor', '*.rb')
+resources = File.join(File.dirname(__FILE__), "executor", "*.rb")
 Dir.glob(resources, &method(:require))
 
 module Sadb

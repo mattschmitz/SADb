@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'test_helper'
+require "test_helper"
 
 # TODO: write these tests or delete this file
 class FilescanCSVTest < Minitest::Test
