@@ -16,7 +16,7 @@ module Sadb
           file_path = "sample_data/#{params[:table]}.csv"
           Sadb::Executor::FilescanCSV.new(file_path: file_path)
         when "limit"
-          Sadb::Executor::Limit.new(params: params, next_node: next_node)
+          Sadb::Executor::Limit.new(limit: params[:limit], next_node: next_node)
         else
           raise "Node type not implemented"
         end

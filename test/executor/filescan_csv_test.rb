@@ -2,7 +2,7 @@
 
 require "test_helper"
 
-describe "Thing" do
+describe "FilescanCSV" do
   before do
     @csv = File.join(File.dirname(__FILE__), "mock_data.csv")
     @filescan = Sadb::Executor::FilescanCSV.new(file_path: @csv)
@@ -23,6 +23,6 @@ describe "Thing" do
     while @filescan.next() != nil
       num_lines_read += 1
     end
-    assert_equal(3, num_lines_read)
+    assert_equal(4, num_lines_read)
   end
 end
