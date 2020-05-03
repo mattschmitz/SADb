@@ -17,6 +17,14 @@ module Sadb
           Sadb::Executor::FilescanCSV.new(file_path: file_path)
         when "limit"
           Sadb::Executor::Limit.new(limit: params[:limit], next_node: next_node)
+        when "selection"
+          Sadb::Executor::Selection.new(predicate: params[:predicate], next_node: next_node)
+        when "col_projection"
+          Sadb::Executor::ColProjection.new(cols: params[:cols], next_node: next_node)
+        when "projection"
+          Sadb::Executor::Projection.new(map_fn: params[:map_fn], next_node: next_node)
+        when "sort"
+          Sadb::Executor::Sort.new(sort_col: params[:sort_col], next_node: next_node)
         else
           raise "Node type not implemented"
         end
