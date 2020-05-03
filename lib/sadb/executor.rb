@@ -12,7 +12,9 @@ module Sadb
       private def instantiate_node(type:, params:, next_node:)
         case type
         when "filescan"
-          Sadb::Executor::FilescanCSV.new(params: params, next_node: next_node)
+          # Todo: remove hardcoded value here
+          file_path = "sample_data/#{params[:table]}.csv"
+          Sadb::Executor::FilescanCSV.new(file_path: file_path)
         when "limit"
           Sadb::Executor::Limit.new(params: params, next_node: next_node)
         else
